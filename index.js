@@ -1,14 +1,14 @@
 // 1.ways to print in javascript
 // console.log("Hello word ");
-alert("hey i am sparta");
-document.write("this is document write ");
 
 
-// 2.javascript console API
-console.log("Hello world");
-console.assert(4 == 4);
-console.warn("this is warning");
-console.error("this is error");
+
+
+// // 2.javascript console API
+// console.log("Hello world");
+// console.assert(4 == 4);
+// console.warn("this is warning");
+// console.error("this is error");
 
 // 3. variable
 // variable = "Container to store the data value"
@@ -63,5 +63,9 @@ console.log("This is value of c % d is ", c % d);
 
 
 
+// ============Exercise============>
 
+// alert("Good morning ! Today we will learn js ");
+// document.write("this is document write ");
 
+document.querySelector('#btn1').click();

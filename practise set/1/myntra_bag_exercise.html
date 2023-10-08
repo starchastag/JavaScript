@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myntra bag</title>
+    <style>
+        .bag{
+            background-color: rgb(143, 238, 42);
+            border: 1px solid black;
+            border-radius: 7px 8px ;
+            width: 100px;
+            color: black;
+            text-transform: uppercase;
+
+        }
+        .moveto{
+            width: 180px;
+            border-radius: 8px 9px 8px 9px;
+            background-color: rgb(220, 198, 241);
+            border: 2px solid black;
+
+        }
+        #add{
+            width: 140px;
+            border-radius: 8px 9px 8px 9px;
+            background-color: rgba(31, 207, 192, 0.76);
+            border: 2px solid black;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <button class="bag" onclick="cartQuantity = cartQuantity + 1;document.querySelector('#cart').innerText = `Yor Bag Has ${cartQuantity} Items`">Add To bag</button>
+    <button class="moveto" onclick="cartQuantity = cartQuantity - 1;document.querySelector('#cart').innerText = `Yor Bag Has ${cartQuantity} Items`">MOVE TO WISHLIST</button>
+    <button id="add" onclick="cartQuantity = cartQuantity + 2;document.querySelector('#cart').innerText = `Yor Bag Has ${cartQuantity} Items`">ADD 1+1 </button>
+    <h2 id="cart">Yor Bag Has 0 Items
+    </h2>
+    <script>
+        let cartQuantity = 0;
+        document.querySelector('#cart').innerText = `Yor Bag Has ${cartQuantity} Items`
+    </script>
+</body>
+
+</html>
